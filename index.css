@@ -1,9 +1,11 @@
+/*Reset*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
 }
 
 html {
@@ -15,9 +17,10 @@ body {
     font-size: 1.6rem;
 }
 
+/*Header Section*/
+
 .top-container {
     width: 100%;
-    
 }
 
 .header-nav nav {
@@ -32,15 +35,21 @@ body {
     display: inline-block;
     width: 12.5%;
     text-align: center;
-    padding: 1%;
-    
+    padding: 1%;   
+}
+
+/*added footer nav anchor links in this section 
+so I didn't have to rewrite it at the bottom*/
+
+.header-nav a:hover,
+.footer-nav a:hover {
+    text-transform: uppercase;
+    transform: scale(1.1);
 }
 
 .header-nav .first-link,
 .footer-nav .first-link{
-    background-color: #FF764E;
-    
-
+    background-color: #FF764E;  
 }
 
 .header-nav .second-link,
@@ -58,12 +67,10 @@ body {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
-    text-align: center;
-
-    
+    text-align: center; 
 }
 
-.header-img {
+.header-banner img {
     border-radius: 200%;
     width: 25%;
     margin-right: 5%;
@@ -79,18 +86,19 @@ body {
 
 .title h1 {
     font-size: 4.5rem;
-    padding: 5%
+    padding: 5%;
 }
 
 .title h2 {
     font-size: 2.0rem;
-    padding: 5%
-   
+    padding: 5%;  
 }
+
+/*Main content*/
 
 .mid-container {
     display: inline-block;
-    width: 100%
+    width: 100%;
     
 }
 
@@ -103,7 +111,7 @@ body {
     color: white;
 }
 
-/* features section*/
+/* Fire and Pay/Reservations Section */
 
 .bottom-container {
     display: inline-block;
@@ -124,40 +132,43 @@ body {
     text-align: center;
     margin: 0 auto;
     width: 50%;
- 
 }
 
 .feature-top p,
 .feature-bottom p  {
-    margin: 3% 0
- 
+    margin: 0 auto;
+    width: 60%; 
 }
 
 .bold {
     font-weight: bold;
 }
 
-/*footer section*/
+/*Footer section*/
 
-/*footer {
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
+footer {
+    background-color: #F9E7DC;
+}
+
+.footer-container img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 40rem;
+}
+
 .footer-container {
     display: inline-block;
     margin: 0 auto;
     width: 100%;
+    height: 30%;
 }
 
-.footer-container img {
-    width: 100%;
-}
 
-.footer-nav {
-    width: 100%;
-    padding: 3%;
-    margin: 3% 6%;
+.footer-nav nav {
+    width: 90%;
+    padding: 2%;
+    margin: 2% 6%;
 }
 
 .footer-nav a {
@@ -167,9 +178,9 @@ body {
     display: inline-block;
     width: 12%;
     text-align: center;
-    padding: 1%;
-    
+    padding: 1%;     
 }
+
 
 
 
